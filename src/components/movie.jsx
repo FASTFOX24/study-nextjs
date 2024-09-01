@@ -12,7 +12,7 @@ const Movie = ({ id, poster_path, title }) => {
   return (
     <div className={styles.movie}>
       <img src={poster_path} alt={title} onClick={onClick} />
-      <Link href={`/movies/${id}`}>{title}</Link>
+      <Link prefetch href={`/movies/${id}`}>{title}</Link>
     </div>
   );
 };  
